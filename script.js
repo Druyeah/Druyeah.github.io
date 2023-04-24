@@ -17,7 +17,7 @@ CALCULAR.addEventListener('click', () => {
         DIARIO.style.display = 'none';
         }
     else if (PESO > 0){
-        
+
         if (PESO <= 30) {
         ERROR.style.display = 'none'
         let flujo = calcFlujo(PESO);
@@ -54,6 +54,7 @@ CALCULAR.addEventListener('click', () => {
     }
 
     function calSupCorporal (peso) {
+        ERROR.style.display = 'none'
         let pesoReal = peso * 1
         let flujo = 0;
         flujo = ((pesoReal* 4) + 7) / (pesoReal + 90)
