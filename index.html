@@ -2,7 +2,8 @@
 <html>
   <head>
     <title>Calculadora de hidratación</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
   </head>
   <body>
   <div id="contenedor">
@@ -12,11 +13,13 @@
       <div class="contenido">
 
         <h1>Hidratación Basal</h1>
-        <input type="number" placeholder="Peso en kg" required>
+        <input id="peso" type="number" placeholder="Peso en kg" required>
         <p class="item" id="error">* Debe completar todos los datos</p>
         <button class="item" id="calcular">Calcular</button>
         <p class="item resultado" id="flu">71cc/h</p>
         <p class="item resultado" id="man">m+m/2 : 105cc/h</p>
+        <p class="item resultado" id="diario">Diario : 105cc/dia</p>
+
 
 
      </div> 
@@ -27,6 +30,7 @@
 
       <div class="contenido">
 
+        <img src="https://mejorconsalud.as.com/wp-content/uploads/2020/01/medico-sosteniendo-suero-fisiologico-768x512.jpg?auto=webp&quality=45&width=1920&crop=16:9,smart,safe" alt="Hidratacion basal imagen" id="imagen">
         <h1>Como se calcula?</h1>
         <ul>
           <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>

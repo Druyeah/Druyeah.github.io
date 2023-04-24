@@ -1,13 +1,16 @@
-h1 {
-    color: blue;
-  }
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
-  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+*{
+    padding: 0%;
+    margin: 0%;
+} /*Para ajustar los margenes en todos los navegadores*/
+
 
   body{
     background: #f6f5f7; 
     font-family: 'Montserrat', sans-serif;
     color: #3E363F;
+    background-color: rgb(53, 202, 244);
 
 }
 
@@ -25,15 +28,16 @@ h1 {
 }
 
 #calculadora{
-    background: white;
+    background: rgb(62, 176, 224);
     /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
     width: 50%;
     height: 100%;
     float: left;
+    color: white;
 }
 
 #detalle{
-    background: #FF416C;
+    background: #0799c6;
     /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
     width: 50%;
     height: 100%;
@@ -50,6 +54,11 @@ h1 {
     padding: 40px;
 }
 
+#imagen{
+    width: 20vh;
+    height: 10vw;
+}
+
 input {
 	width: 70%;
     padding: 12px 15px;
@@ -63,8 +72,8 @@ button {
     padding: 12px 45px;
     margin: 4vh 0;
     border-radius: 30px;
-    background-color: #FF416C;
-    border: 1px solid #FF416C;
+    background-color: #134b9e;
+    border: 1px solid #1c6feb;
     color: #FFFFFF;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -82,7 +91,7 @@ button {
 }
 
 .resultado{
-    color: #0A81D1;
+    color: white;
     font-weight: bold;
     font-size: 25px;
     margin-bottom: 5px;
